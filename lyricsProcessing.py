@@ -5,11 +5,13 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 
+
 #Creating Datasets
 funk = pd.read_csv('funk.csv', sep='\t', names=['lyrics'])
 bossa = pd.read_csv('bossa_nova.csv', sep='\t', names=['lyrics'])
 gospel = pd.read_csv('gospel.csv', sep='\t', names=['lyrics'])
 sertanejo = pd.read_csv('sertanejo.csv', sep='\t', names=['lyrics'])
+
 
 #Adding genre collum to datasets
 genre1 = ["funk" for x in range(801)]
